@@ -2,8 +2,8 @@
 <html>
 <head>
 
- <title>Ìåðîïðèÿòèÿ</title>
-<meta chrarset="utf-8">
+ <title>Мероприятия</title>
+
 <style>
 * {box-sizing: border-box}
 body {font-family: "Lato", sans-serif;}
@@ -95,25 +95,25 @@ body {font-family: "Lato", sans-serif;}
 
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Events')" id="defaultOpen">Ìåðîïðèÿòèÿ</button>
-  <button class="tablinks" onclick="openCity(event, 'Groups')">Ãðóïïû</button>
-<button class="tablinks" onclick="openCity(event, 'Learners')">Ó÷åíèêè</button>
+  <button class="tablinks" onclick="openCity(event, 'Events')" id="defaultOpen">Мероприятия</button>
+  <button class="tablinks" onclick="openCity(event, 'Groups')">Группы</button>
+<button class="tablinks" onclick="openCity(event, 'Learners')">Ученики</button>
  
 </div>
 
 <div id="Events" class="tabcontent">
 
   
-<button class=" w3-btn w3-green w3-hover-light-blue w3-round"  onclick="location.href='/logout'">Íîâîå ìåðîïðèÿòèå</button>
+<button class=" w3-btn w3-green w3-hover-light-blue w3-round"  onclick="location.href='/logout'">Новое мероприятие</button>
 <div class="row">
-  <div class="column"> <h5>Äàðüÿ</h5>
+  <div class="column"> <h5>Дарья</h5>
  <table class="w3-table w3-center w3-bordered w3-striped w3-border w3-hoverable">
         <thead>
         <tr class="w3-pale-red">
 
-            <th scope="col">Íà÷àëî</th>
-            <th scope="col">Îêîí÷àíèå</th>
-            <th scope="col">Îïèñàíèå/Ãðóïïà</th>
+            <th scope="col">Начало</th>
+            <th scope="col">Окончание</th>
+            <th scope="col">Описание/Группа</th>
 <th></th><th></th>
             
         </tr>
@@ -122,7 +122,7 @@ body {font-family: "Lato", sans-serif;}
                 <tr>
                     <td>10-00</td>
                     <td>12-40</td>
-                    <td>ðåïåòèöèÿ ëàìîäà</td>
+                    <td>репетиция ламода</td>
 <td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
 
            </tr>
@@ -136,7 +136,7 @@ body {font-family: "Lato", sans-serif;}
                 <tr>
                     <td>14-30</td>
                     <td></td>
-                    <td>áàíê</td>
+                    <td>банк</td>
 <td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
 
            </tr>
@@ -198,13 +198,13 @@ body {font-family: "Lato", sans-serif;}
         </tbody>
     </table>
 </div>
-  <div class="column"><h5>Àëåêñåé</h5>
+  <div class="column"><h5>Алексей</h5>
  <table class="w3-table w3-center w3-bordered w3-striped w3-border w3-hoverable">
         <thead>
         <tr class="w3-pale-green">
-            <th scope="col">Íà÷àëî</th>
-            <th scope="col">Îêîí÷àíèå</th>
-            <th scope="col">Îïèñàíèå/Ãðóïïà</th>
+            <th scope="col">Начало</th>
+            <th scope="col">Окончание</th>
+            <th scope="col">Описание/Группа</th>
             <th></th>
 <th></th>
         </tr>
@@ -214,14 +214,14 @@ body {font-family: "Lato", sans-serif;}
                 <tr>
                     <td>11-00</td>
                     <td></td>
-                    <td>âîæäåíèå</td>
+                    <td>вождение</td>
  <td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
 
            </tr>
                            <tr>
                     <td>13-00</td>
                     <td></td>
-                    <td>çàêàçàòü áèëåòû</td>
+                    <td>заказать билеты</td>
 <td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
 
            </tr>
@@ -286,10 +286,10 @@ body {font-family: "Lato", sans-serif;}
   <form method="post" class="w3-container w3-light-grey w3-padding " enctype="multipart/form-data"> <!---->
         <table class="w3-table "><tr>
     <td width="70%">
-        <input type="text" name="description" required="required" class="w3-input w3-border w3-round-large "  placeholder="íàçâàíèå ãðóïïû">
+        <input type="text" name="description" required="required" class="w3-input w3-border w3-round-large "  placeholder="название группы">
     </td>
             <td>
-        <button type="submit" class="w3-btn w3-green w3-round-large w3-margin-bottom">Äîáàâèòü ãðóïïó</button>
+        <button type="submit" class="w3-btn w3-green w3-round-large w3-margin-bottom">Добавить группу</button>
         </td> </tr>  </table>
         </form>
   <table class="w3-table w3-center w3-bordered w3-striped w3-border w3-hoverable" >
@@ -330,67 +330,67 @@ body {font-family: "Lato", sans-serif;}
 </div>
 <div id="Learners" class="tabcontent">
 <div class="w3-panel w3-white  w3-card-4" style="">
-<button type="submit" class="w3-btn w3-green w3-hover-light-blue w3-round w3-margin-center " style="padding:10px;margin:10px ">Äîáàâèòü ó÷åíèêà</button>
+<button type="submit" class="w3-btn w3-green w3-hover-light-blue w3-round w3-margin-center " style="padding:10px;margin:10px ">Добавить ученика</button>
 <dl>
-  <dt>À</dt>
-    <dd><a href="URL">Àëåêñååíêî Ïàâåë</a></dd>
- <!-- <dt>Á</dt>
- <dt>Â</dt>
- <dt>Ã</dt>-->
- <dt>Ä</dt> 
-<dd><a href="URL">Äìèòðèåâà Ìàðãàðèòà</a></dd>
-  <!-- <dt>Å</dt>
- <dt>Æ</dt>
- <dt>Ç</dt>
- <dt>È</dt>-->
- <dt>Ê</dt>
-<dd><a href="URL">Êóçüìåíêîâà Äàðüÿ</a></dd>
-<!-- <dt>Ë</dt>-->
- <dt>Ì</dt><dd><a href="URL">Ìîðîçîâà Êðèñòèíà</a></dd>
-<!-- <dt>Í</dt>
- <dt>Î</dt>
- <dt>Ï</dt>
- <dt>Ð</dt>-->
- <dt>Ñ</dt><dd><a href="URL">Ñòåïàíåíêî Ìàêñèì</a></dd>
- <dt>Ò</dt><dd><a href="URL">Òåðåùåíêî Çàõàð</a></dd>
- <!--<dt>Ó</dt>
- <dt>Ô</dt>
- <dt>Õ</dt>
- <dt>Ö</dt>
- <dt>×</dt>-->
- <dt>Ø</dt><dd><a href="URL">Øóáè÷ Àíàñòàñèÿ</a></dd>
- <!--<dt>Ù</dt>
- <dt>Ý</dt>
- <dt>Þ</dt>
- <dt>ß</dt>-->
+  <dt>А</dt>
+    <dd><a href="URL">Алексеенко Павел</a></dd>
+ <!-- <dt>Б</dt>
+ <dt>В</dt>
+ <dt>Г</dt>-->
+ <dt>Д</dt> 
+<dd><a href="URL">Дмитриева Маргарита</a></dd>
+  <!-- <dt>Е</dt>
+ <dt>Ж</dt>
+ <dt>З</dt>
+ <dt>И</dt>-->
+ <dt>К</dt>
+<dd><a href="URL">Кузьменкова Дарья</a></dd>
+<!-- <dt>Л</dt>-->
+ <dt>М</dt><dd><a href="URL">Морозова Кристина</a></dd>
+<!-- <dt>Н</dt>
+ <dt>О</dt>
+ <dt>П</dt>
+ <dt>Р</dt>-->
+ <dt>С</dt><dd><a href="URL">Степаненко Максим</a></dd>
+ <dt>Т</dt><dd><a href="URL">Терещенко Захар</a></dd>
+ <!--<dt>У</dt>
+ <dt>Ф</dt>
+ <dt>Х</dt>
+ <dt>Ц</dt>
+ <dt>Ч</dt>-->
+ <dt>Ш</dt><dd><a href="URL">Шубич Анастасия</a></dd>
+ <!--<dt>Щ</dt>
+ <dt>Э</dt>
+ <dt>Ю</dt>
+ <dt>Я</dt>-->
 
 </dl>
 <table class="w3-table w3-center w3-bordered w3-striped w3-border w3-hoverable">
 	
 	<tbody>
 		<tr>
-			<th scope="row">Ôàìèëèÿ</th>
-			<td>Äìèòðèåâà</td>
+			<th scope="row">Фамилия</th>
+			<td>Дмитриева</td>
 		</tr>
 		<tr>
-			<th scope="row">Èìÿ</th>
-			<td>Ìàðãàðèòà</td>
+			<th scope="row">Имя</th>
+			<td>Маргарита</td>
 		</tr>
 		<tr>
-			<th scope="row">Îò÷åñòâî</th>
-			<td>Àëåêñååâíà</td>
+			<th scope="row">Отчество</th>
+			<td>Алексеевна</td>
 		</tr>
 		<tr>
-			<th scope="row">Äàòà ðîæäåíèÿ</th>
-			<td>13.01.2014 (4 ãîäà)</td>
+			<th scope="row">Дата рождения</th>
+			<td>13.01.2014 (4 года)</td>
 		</tr>
 		<tr>
-			<th scope="row">Ãðóïïà</th>
+			<th scope="row">Группа</th>
 			<td>kids</td>
 		</tr>
 		<tr>
-			<th scope="row">Êîíòàêòíûå òåëåôîíû</th>
-			<td>+375(25)707-34-29 (Îëüãà)</td>
+			<th scope="row">Контактные телефоны</th>
+			<td>+375(25)707-34-29 (Ольга)</td>
 		</tr>
 	</tbody>
 </table>
