@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>Мероприятия</title>
+
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 15%;
+    height: 900px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ddd;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 85%;
+    border-left: none;
+    height: 900px;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.column2 {
+    float: left;
+    width: 90%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.block {
+    display: block;
+    width: 100%;
+    border: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    align: center;
+}
+
+.block:hover {
+    background-color: #ddd;
+    color: black;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/w3.css" rel="stylesheet">
+</head>
+<body>
+<div  class="w3-bar w3-blue-grey w3-opacity w3-right-align">
+    <h5>Hello, Daria
+    <button class=" w3-btn w3-green w3-hover-light-blue w3-small"  onclick="location.href='/logout'">LogOut</button></h5>
+</div>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Events')" id="defaultOpen">Мероприятия</button>
+  <button class="tablinks" onclick="openCity(event, 'Groups')">Группы</button>
+<button class="tablinks" onclick="openCity(event, 'Learners')">Ученики</button>
+ 
+</div>
+
+<div id="Events" class="tabcontent">
+
+  
+<button class=" w3-btn w3-green w3-hover-light-blue w3-round"  onclick="location.href='/logout'">Новое мероприятие</button>
+<div class="row">
+  <div class="column"> <h5>Дарья</h5>
+ <table class="w3-table w3-center w3-bordered w3-striped w3-border w3-hoverable">
+        <thead>
+        <tr class="w3-pale-red">
+
+            <th scope="col">Начало</th>
+            <th scope="col">Окончание</th>
+            <th scope="col">Описание/Группа</th>
+<th></th><th></th>
+            
+        </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>10-00</td>
+                    <td>12-40</td>
+                    <td>репетиция ламода</td>
+<td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
+
+           </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+ <td></td>
+
+           </tr>
+                <tr>
+                    <td>14-30</td>
+                    <td></td>
+                    <td>банк</td>
+<td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
+
+           </tr>
+                <tr>
+                    <td>16-40</td>
+                    <td>17-20</td>
+                    <td><a href="URL">Junior (12-15)</a></td>
+<td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
+
+           </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+ <td></td>
+
+           </tr>
+ <tr>
+                    <td>18-00</td>
+                    <td>18-40</td>
+                    <td><a href="URL">Kids (3-5)</a></td>
+<td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
+
+           </tr>
+
+            
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+ <td></td>
+
+           </tr>
+
+            
+                <tr>
+                    <td>19-20</td>
+                    <td>20-00</td>
+                    <td><a href="URL">Kids (6-8)</a></td>
+<td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
+
+           </tr>
+<tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+<td></td>
+
+           </tr>
+                <tr>
+                    <td>20-40</td>
+                    <td>21-20</td>
+                    <td><a href="URL">High Heels</a></td>
+<td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
+
+           </tr>
+
+           
+        </tbody>
+    </table>
+</div>
+  <div class="column"><h5>Алексей</h5>
+ <table class="w3-table w3-center w3-bordered w3-striped w3-border w3-hoverable">
+        <thead>
+        <tr class="w3-pale-green">
+            <th scope="col">Начало</th>
+            <th scope="col">Окончание</th>
+            <th scope="col">Описание/Группа</th>
+            <th></th>
+<th></th>
+        </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td>11-00</td>
+                    <td></td>
+                    <td>вождение</td>
+ <td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
+
+           </tr>
+                           <tr>
+                    <td>13-00</td>
+                    <td></td>
+                    <td>заказать билеты</td>
+<td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
+
+           </tr>
+<tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+ <td></td>
+
+           </tr>
+<tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+ <td></td>
+
+           </tr>
+<tr>
+                    <td>17-20</td>
+                    <td>18-00</td>
+                    <td><a href="URL">Youth (16+)</a></td>
+<td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
+
+           </tr>
+<tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+ <td></td>
+
+           </tr>
+<tr>
+                    <td>18-40</td>
+                    <td>19-20</td>
+                    <td><a href="URL">Juvenile (9-11)</a></td>
+ <td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
+
+           </tr>
+<tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+ <td></td>
+
+           </tr>
+<tr>
+                    <td>20-00</td>
+                    <td>20-40</td>
+                    <td><a href="URL">Body Make</a></td>
+<td><i class="fa fa-edit" style="font-size:24px; color:green"></i></td><td><i class="fa fa-close" style="font-size:24px; color:red"></i></td>
+
+           </tr>
+
+        </tbody>
+    </table></div>
+</div>
+</div>
+
+<div id="Groups" class="tabcontent">
+
+<div class="column2">
+  <form method="post" class="w3-container w3-light-grey w3-padding " enctype="multipart/form-data"> <!---->
+        <table class="w3-table "><tr>
+    <td width="70%">
+        <input type="text" name="description" required="required" class="w3-input w3-border w3-round-large "  placeholder="название группы">
+    </td>
+            <td>
+        <button type="submit" class="w3-btn w3-green w3-round-large w3-margin-bottom">Добавить группу</button>
+        </td> </tr>  </table>
+        </form>
+  <table class="w3-table w3-center w3-bordered w3-striped w3-border w3-hoverable" >
+        <tbody>
+            
+                <tr>
+                    <td><button class="block">Kids (3-5)</button></td>
+
+           </tr>
+                           <tr>
+                    <td><button class="block">Kids (6-8)</button></td>
+
+           </tr>
+                           <tr>
+                    <td><button class="block">Juvenile (9-11)</button></td>
+
+           </tr>
+                           <tr>
+                    <td><button class="block">Junior (12-15)</button></td>
+
+           </tr>
+                           <tr>
+                    <td><button class="block">Youth (16+)</button></td>
+
+           </tr>
+                           <tr>
+                    <td><button class="block">High Heels</button></td>
+
+           </tr>
+                           <tr>
+                    <td><button class="block">Body Make</button></td>
+
+           </tr>
+
+        </tbody>
+    </table>
+</div>
+</div>
+<div id="Learners" class="tabcontent">
+<div class="w3-panel w3-white  w3-card-4" style="">
+<button type="submit" class="w3-btn w3-green w3-hover-light-blue w3-round w3-margin-center " style="padding:10px;margin:10px ">Добавить ученика</button>
+<dl>
+  <dt>А</dt>
+    <dd><a href="URL">Алексеенко Павел</a></dd>
+ <!-- <dt>Б</dt>
+ <dt>В</dt>
+ <dt>Г</dt>-->
+ <dt>Д</dt> 
+<dd><a href="URL">Дмитриева Маргарита</a></dd>
+  <!-- <dt>Е</dt>
+ <dt>Ж</dt>
+ <dt>З</dt>
+ <dt>И</dt>-->
+ <dt>К</dt>
+<dd><a href="URL">Кузьменкова Дарья</a></dd>
+<!-- <dt>Л</dt>-->
+ <dt>М</dt><dd><a href="URL">Морозова Кристина</a></dd>
+<!-- <dt>Н</dt>
+ <dt>О</dt>
+ <dt>П</dt>
+ <dt>Р</dt>-->
+ <dt>С</dt><dd><a href="URL">Степаненко Максим</a></dd>
+ <dt>Т</dt><dd><a href="URL">Терещенко Захар</a></dd>
+ <!--<dt>У</dt>
+ <dt>Ф</dt>
+ <dt>Х</dt>
+ <dt>Ц</dt>
+ <dt>Ч</dt>-->
+ <dt>Ш</dt><dd><a href="URL">Шубич Анастасия</a></dd>
+ <!--<dt>Щ</dt>
+ <dt>Э</dt>
+ <dt>Ю</dt>
+ <dt>Я</dt>-->
+
+</dl>
+<table class="w3-table w3-center w3-bordered w3-striped w3-border w3-hoverable">
+	
+	<tbody>
+		<tr>
+			<th scope="row">Фамилия</th>
+			<td>Дмитриева</td>
+		</tr>
+		<tr>
+			<th scope="row">Имя</th>
+			<td>Маргарита</td>
+		</tr>
+		<tr>
+			<th scope="row">Отчество</th>
+			<td>Алексеевна</td>
+		</tr>
+		<tr>
+			<th scope="row">Дата рождения</th>
+			<td>13.01.2014 (4 года)</td>
+		</tr>
+		<tr>
+			<th scope="row">Группа</th>
+			<td>kids</td>
+		</tr>
+		<tr>
+			<th scope="row">Контактные телефоны</th>
+			<td>+375(25)707-34-29 (Ольга)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 
